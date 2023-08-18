@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>F*ck you, ATS</h1>
     <div>
         <form>
-            <textarea type="text"></textarea>
-            <input type="submit">
+            <textarea type="text" id="keywords"></textarea>
+            <input type="submit" id="submitButton">
         </form>
     </div>
 </body>
+<script>
+    let submitButton = $("#submitButton")
+
+    submitButton.click(function(event){
+        event.preventDefault();
+        let inputField = $("#keywords").val()
+        console.log(inputField)
+    })
+
+
+
+    
+</script>
 </html>
