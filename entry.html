@@ -17,7 +17,12 @@
         </form>
     </div>
     <div>
+        <h3>The result:</h3>
         <p id="results"></p>
+    </div>
+    <div>
+        <h3>White text:</h3>
+        <p id = "whiteresults"></p>
     </div>
 </body>
 <script>
@@ -27,6 +32,7 @@
         event.preventDefault();
         const inputField = $("#keywords").val()
         const final = (inputField.split("\n").join(', '))
+        $("#whiteresults").text(final)
         $("#results").text(final)
     
     })
