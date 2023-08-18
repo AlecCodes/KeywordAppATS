@@ -16,18 +16,22 @@
             <input type="submit" id="submitButton">
         </form>
     </div>
+    <div>
+        <p id="results"></p>
+    </div>
 </body>
 <script>
     let submitButton = $("#submitButton")
 
     submitButton.click(function(event){
         event.preventDefault();
-        let inputField = $("#keywords").val()
-        console.log(inputField)
+        const inputField = $("#keywords").val()
+        const final = (inputField.split("\n").join(', '))
+        $("#results").text(final)
+    
     })
 
 
 
-    
 </script>
 </html>
