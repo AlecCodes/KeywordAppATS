@@ -2,6 +2,7 @@
 <html lang="en">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <head>
+    <link rel="stylesheet" type="text/css" href="mainpage.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +10,22 @@
 </head>
 
 <body>
-    <h1>F*ck you, ATS</h1>
     <div>
-        <form>
-            <textarea type="text" id="keywords"></textarea>
-            <input type="submit" id="submitButton">
-        </form>
-    </div>
-    <div>
-        <h3>The result:</h3>
-        <p id="results"></p>
-    </div>
-    <div>
-        <h3>White text:</h3>
-        <p id = "whiteresults"></p>
+        <h1 >F*ck you, ATS</h1>
+        <div id = "page">
+            <div>
+                <form id="entry" >
+                    <textarea type="text" id="keywords"></textarea>
+                    <input type="submit" id="submitButton">
+                </form>
+                <div id ="results">
+                    <h3>The result:</h3>
+                    <p id="blackresults"></p>
+                    <h3>White text:</h3>
+                    <p id = "whiteresults"></p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <script>
@@ -33,8 +36,7 @@
         const inputField = $("#keywords").val()
         const final = (inputField.split("\n").join(', '))
         $("#whiteresults").text(final)
-        $("#results").text(final)
-    
+        $("#blackresults").text(final)
     })
 
 

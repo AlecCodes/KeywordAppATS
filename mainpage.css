@@ -1,0 +1,15 @@
+#page {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#results{
+    height: 100vh;
+}
+
+#blackresults, #whiteresults {
+    background-color: gray;
+    height: 150px;
+}
+
