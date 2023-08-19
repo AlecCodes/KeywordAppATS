@@ -22,7 +22,7 @@
                     <h3>The result:</h3>
                     <p id="blackresults"></p>
                     <h3>White text:</h3>
-                    <p id = "whiteresults"></p>
+                    <div id = "whiteresults"><p id="whitetext"></p></iv>
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@
         event.preventDefault();
         const inputField = $("#keywords").val()
         const final = (inputField.split("\n").join(', '))
-        $("#whiteresults").text(final)
+        $("#whitetext").text(final)
         $("#blackresults").text(final)
     })
 

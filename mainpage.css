@@ -8,8 +8,16 @@
     height: 100vh;
 }
 
-#blackresults, #whiteresults {
+#blackresults {
     background-color: gray;
     height: 150px;
+}
+
+#whiteresults{
+    border: solid;
+    height: fit-content;
+}
+#whitetext{
+    color : white;
 }
 
