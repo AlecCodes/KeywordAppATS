@@ -38,7 +38,10 @@
         const final = (inputField.split("\n").join(', '))
         whitetext.text(final)
         $("#blackresults").text(final)
-
+        const range = document.createRange()
+        range.selectNodeContents(whitetext[0])
+        window.getSelection().removeAllRanges()
+        window.getSelection().addRange(range)
     })
 
 
