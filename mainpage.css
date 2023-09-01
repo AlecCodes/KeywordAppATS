@@ -9,11 +9,13 @@
 
 .page {
     display: flex;
+    padding: 50px;
     justify-content:center;
     align-items: center;
     border: solid;
     width: 50%;
 }
+
 #entryresults{
     position: relateive;
 }
